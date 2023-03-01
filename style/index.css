@@ -1,0 +1,139 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+}
+
+.header__title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__title-image {
+  height: 4vh;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(333deg)
+    brightness(104%) contrast(102%);
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.header__search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+.header__search {
+  width: 70vw;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  color: var(--dark);
+}
+
+.header__search::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: var(--primary);
+}
+
+.header__search-wrapper > img {
+  position: absolute;
+  top: 4px;
+  right: 245px;
+  height: 2.5vh;
+  filter: invert(23%) sepia(96%) saturate(3923%) hue-rotate(339deg)
+    brightness(82%) contrast(115%);
+}
+
+.header__search-button {
+  padding: 8px 10px;
+  border-radius: 50%;
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+.main {
+  background-color: var(--white);
+  margin: 24px 4px 4px;
+  padding: 24px 12px;
+  border-radius: 8px;
+}
+
+.main__pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main__pokemon {
+  width: 108px;
+  height: 108px;
+  padding: 4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main__pokemon-number {
+  width: 100%;
+  padding-right: 4px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__pokemon-number > span {
+  font-size: 8px;
+  color: var(--medium-gray);
+}
+
+.main__pokemon-image {
+  width: 65%;
+}
+
+.main__pokemon-name {
+  font-size: 10px;
+  color: var(--dark);
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header__search {
+    width: 20vw;
+  }
+
+  .main {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+  }
+}
