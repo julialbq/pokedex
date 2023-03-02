@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="../assets/Pokeball.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/pokemon.css" />
+    <title>Pokemon</title>
+  </head>
+  <body class="card">
+    <header class="card__header" id="header">
+      <div class="card__header-wrapper" id="headerDiv">
+        <button class="card__header-button">
+          <img src="../assets/Vector.png" alt="arrow" />
+        </button>
+      </div>
+    </header>
+    <main class="card__main">
+      <div class="card__main-wrapper">
+        <div id="imageDiv"></div>
+        <div class="card__main-type-wrapper" id="typeDiv"></div>
+      </div>
+      <div class="card__main-wrapper">
+        <h2 class="card__main-title">About</h2>
+        <div class="card__main-about-wrapper">
+          <div class="card__main-about" id="weightDiv">
+            <span>Weight</span>
+          </div>
+          <div class="card__main-about" id="heightDiv">
+            <span>Height</span>
+          </div>
+          <div class="card__main-about" id="movesDiv">
+            <span>Moves</span>
+          </div>
+        </div>
+      </div>
+      <h3 class="card__main-about-text" id="aboutText"></h3>
+      <h2 class="card__main-title">Base Stats</h2>
+      <div class="card__main-stats-wrapper">
+        <div class="card__main-stats" id="hpDiv">
+          <p class="stats__text">HP</p>
+          <span id="hp"></span>
+          <div class="stats__bar" id="barHp">
+            <progress max="100" class="stats__bar--filled" id="barHpFilled"></progress>
+          </div>
+        </div>
+        <div class="card__main-stats" id="atkDiv">
+          <p class="stats__text">ATK</p>
+          <span id="atk"></span>
+          <div class="stats__bar" id="barAtk">
+            <progress max="100" class="stats__bar--filled" id="barAtkFilled"></progress>
+          </div>
+        </div>
+        <div class="card__main-stats" id="defDiv">
+          <p class="stats__text">DEF</p>
+          <span id="def"></span>
+          <div class="stats__bar" id="barDef">
+            <progress max="100" class="stats__bar--filled" id="barDefFilled"></progress>
+          </div>
+        </div>
+        <div class="card__main-stats" id="stakDiv">
+          <p class="stats__text">STAK</p>
+          <span id="stak"></span>
+          <div class="stats__bar" id="barStak">
+            <progress max="100" class="stats__bar--filled" id="barStakFilled"></progress>
+          </div>
+        </div>
+        <div class="card__main-stats" id="sdefDiv">
+          <p class="stats__text">SDEF</p>
+          <span id="sdef"></span>
+          <div class="stats__bar" id="barSdef">
+            <progress max="100" class="stats__bar--filled" id="barSdefFilled"></progress>
+          </div>
+        </div>
+        <div class="card__main-stats" id="spdDiv">
+          <p class="stats__text">SPD</p>
+          <span id="spd"></span>
+          <div class="stats__bar" id="barSpd">
+            <progress max="100" class="stats__bar--filled" id="barSpdFilled"></progress>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script type="module" src="./api/api.js"></script>
+    <script type="module" src="../scripts/pokemon.js"></script>
+  </body>
+</html>
