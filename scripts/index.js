@@ -25,7 +25,7 @@ const pokemonCard = (pokemon) => {
   div.appendChild(span)
 
   span.innerText = `#00${pokemon.id}`
-  img.src = pokemon.sprites.front_default
+  img.src = pokemon.sprites.other["official-artwork"].front_default
   img.alt = pokemon.name
   p.innerText = pokemon.name
   li.append(div, img, p)

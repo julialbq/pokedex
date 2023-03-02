@@ -24,3 +24,12 @@ export const getPokemon = async (pokemonUrl) => {
     console.error(error);
   }
 };
+
+export const getPokemonInfo = async (id) => {
+  try {
+    const response = await axios.get(`${apiURL}pokemon/${id}/`);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};

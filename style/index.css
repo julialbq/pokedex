@@ -39,7 +39,7 @@
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  color: var(--dark);
+  color: var(--dark-gray);
 }
 
 .header__search::-webkit-input-placeholder {
@@ -116,7 +116,7 @@
 
 .main__pokemon-name {
   font-size: 10px;
-  color: var(--dark);
+  color: var(--dark-gray);
   text-transform: capitalize;
 }
 

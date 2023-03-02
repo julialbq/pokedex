@@ -1,0 +1,327 @@
+.card {
+  margin: 0 auto;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px 0;
+}
+
+.card__header-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.card__header-button {
+  background-color: transparent;
+}
+
+.card__header-title {
+  color: var(--white);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.card__header-number {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card__main {
+  align-content: center;
+  align-self: center;
+  background-color: var(--white);
+  box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin: 224px 4px 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  translate: 0 -150px;
+}
+
+.card__main-image {
+  width: 200px;
+}
+
+.card__main-type-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card__main-type {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: capitalize;
+
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.card__main-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card__main-about-wrapper {
+  width: 100vw;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card__main-about {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__main-about:nth-child(2) {
+  border-right: 1px solid var(--light-gray);
+  border-left: 1px solid var(--light-gray);
+}
+
+.card__main-about > p {
+  color: var(--dark-gray);
+  font-size: 10px;
+
+  text-align: center;
+}
+
+.card__main-about > span {
+  color: var(--medium-gray);
+  font-size: 8px;
+}
+
+.card__main-about-text {
+  margin-top: -100px;
+  color: var(--dark-gray);
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__main-stats-wrapper {
+  width: 100vw;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__main-stats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card__main-stats > span,
+p {
+  color: var(--dark-gray);
+  font-size: 10px;
+}
+
+.stats__text {
+  width: 20px;
+  border-right: 1px solid var(--light-gray);
+  padding-right: 10px;
+}
+
+.stats__bar {
+  width: 233px;
+  height: 4px;
+  border-radius: 4px;
+  opacity: .4;
+}
+
+.stats__bar--filled {
+  width: 233px;
+  height: 4px;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.grass-color {
+  color: var(--grass);
+  font-weight: 700;
+}
+
+.bug-color {
+  color: var(--bug);
+  font-weight: 700;
+}
+
+.dark-color {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.dragon-color {
+  color: var(--dragon);
+  font-weight: 700;
+}
+
+.electric-color {
+  color: var(--electric);
+  font-weight: 700;
+}
+
+.fairy-color {
+  color: var(--fairy);
+  font-weight: 700;
+}
+
+.fighting-color {
+  color: var(--fighting);
+  font-weight: 700;
+}
+
+.fire-color {
+  color: var(--fire);
+  font-weight: 700;
+}
+
+.flying-color {
+  color: var(--flying);
+  font-weight: 700;
+}
+
+.ghost-color {
+  color: var(--ghost);
+  font-weight: 700;
+}
+
+.normal-color {
+  color: var(--normal);
+  font-weight: 700;
+}
+
+.ground-color {
+  color: var(--ground);
+  font-weight: 700;
+}
+
+.ice-color {
+  color: var(--ice);
+  font-weight: 700;
+}
+
+.poison-color {
+  color: var(--poison);
+  font-weight: 700;
+}
+
+.psychic-color {
+  color: var(--psychic);
+  font-weight: 700;
+}
+
+.rock-color {
+  color: var(--rock);
+  font-weight: 700;
+}
+
+.steel-color {
+  color: var(--steel);
+  font-weight: 700;
+}
+
+.water-color {
+  color: var(--water);
+  font-weight: 700;
+}
+
+.grass-bckg {
+  background-color: var(--grass);
+}
+
+.poison-bckg {
+  background-color: var(--poison);
+}
+
+.bug-bckg {
+  background-color: var(--bug);
+}
+
+.dark-bckg {
+  background-color: var(--dark);
+}
+
+.dragon-bckg {
+  background-color: var(--dragon);
+}
+
+.electric-bckg {
+  background-color: var(--electric);
+}
+
+.fairy-bckg {
+  background-color: var(--fairy);
+}
+
+.fighting-bckg {
+  background-color: var(--fighting);
+}
+
+.fire-bckg {
+  background-color: var(--fire);
+}
+
+.flying-bckg {
+  background-color: var(--flying);
+}
+
+.ghost-bckg {
+  background-color: var(--ghost);
+}
+
+.normal-bckg {
+  background-color: var(--normal);
+}
+
+.ground-bckg {
+  background-color: var(--ground);
+}
+
+.ice-bckg {
+  background-color: var(--ice);
+}
+
+.psychic-bckg {
+  background-color: var(--psuchic);
+}
+
+.rock-bckg {
+  background-color: var(--rock);
+}
+
+.steel-bckg {
+  background-color: var(--steel);
+}
+
+.water-bckg {
+  background-color: var(--water);
+}
