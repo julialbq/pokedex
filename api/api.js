@@ -1,8 +1,12 @@
 const apiURL = "https://pokeapi.co/api/v2/";
+const limit = 150;
+const offset = 0;
 
 export const getAllPokemon = async () => {
   try {
-    const response = await axios.get(`${apiURL}pokemon/?limit=150&offset=0`);
+    const response = await axios.get(
+      `${apiURL}pokemon/?limit=${limit}&offset=${offset}`
+    );
     const pokemon = response.data.results.map(async (pokemon) => {
       return await getPokemon(pokemon.url);
     });

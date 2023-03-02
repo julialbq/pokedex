@@ -47,7 +47,7 @@
   font-weight: normal;
   overflow: visible;
   vertical-align: top;
-  display: inline-block !important;
+  display: inline-block;
   padding-left: 5px;
   padding-top: 2px;
   color: var(--primary);
